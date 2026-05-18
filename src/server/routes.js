@@ -63,9 +63,26 @@ router.get('/tasks/:id', (req, res) => {
 
 // PUT /api/tasks/:id - 업무 수정 (200, 부분 수정)
 router.put('/tasks/:id', (req, res) => {
-  const validation = validateTask(req.body);
-  if (!validation.valid) {
-    return res.status(400).json({ error: validation.error });
+  // 부분 수정이므로 title이 제공되는 경우에만 검증
+  if (req.body.title !== undefined) {
+    if (!req.body.title || req.body.title.trim() === '') {
+      return res.status(400).json({ error: 'title은 필수입니다' });
+    }
+    if (req.body.title.length > 200) {
+      return res.status(400).json({ error: 'title은 200자 이하여야 합니다' });
+    }
+  }
+
+  if (req.body.status && !['todo', 'in_progress', 'done'].includes(req.body.status)) {
+    return res.status(400).json({ error: 'status는 todo, in_progress, done 중 하나여야 합니다' });
+  }
+
+  if (req.body.due_at) {
+    try {
+      new Date(req.body.due_at);
+    } catch (err) {
+      return res.status(400).json({ error: 'due_at는 ISO 8601 형식이어야 합니다' });
+    }
   }
 
   try {

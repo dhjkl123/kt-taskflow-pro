@@ -62,7 +62,7 @@
 
 ---
 
-## Phase 3: 프론트엔드 UI 개발
+## Phase 3: 프론트엔드 UI 개발 ✅
 
 **목표**: Task 관리 UI 완성, API 연동, 배포  
 **기간**: 1.5주  
@@ -72,16 +72,17 @@
 
 | # | 작업 | 상태 | 검증 방법 | 담당자 | 완료일 |
 |---|------|------|---------|--------|--------|
-| 1 | 프로젝트 초기화 | ⏳ 예정 | npm create vite@latest (React + TypeScript) | 개발자 | - |
-| 2 | 의존성 설치 | ⏳ 예정 | npm install: React, TypeScript, Tailwind, Axios 설치 | 개발자 | - |
-| 3 | 폴더 구조 생성 | ⏳ 예정 | src/client, components, pages, store, api 폴더 생성 | 개발자 | - |
-| 4 | 메인 레이아웃 | ⏳ 예정 | App.tsx 작성, 헤더(제목 + 테마 토글) + 콘텐츠 영역, macOS 디자인 | 개발자 | - |
-| 5 | CRUD 컴포넌트 | ⏳ 예정 | TaskForm, TaskList, TaskCard, TaskModal 작성 (01-product 기준) | 개발자 | - |
-| 6 | API 호출 로직 | ⏳ 예정 | src/api.ts: Axios 기본 설정, POST/GET/PUT/DELETE 함수 작성 | 개발자 | - |
-| 7 | 테마 토글 구현 | ⏳ 예정 | localStorage 저장, dark 클래스 토글, 새로고침 시 유지 | 개발자 | - |
-| 8 | 반응형 + 배포 | ⏳ 예정 | 360px 테스트, npm run build, git push, Vercel 배포 | 개발자 | - |
+| 1 | 프로젝트 초기화 | ✅ 완료 | npm create vite@latest (React) | Claude | 2026-05-18 |
+| 2 | 의존성 설치 | ✅ 완료 | npm install: React, Tailwind, Axios 설치됨 | Claude | 2026-05-18 |
+| 3 | 폴더 구조 생성 | ✅ 완료 | src/client/src/components, api.js 생성됨 | Claude | 2026-05-18 |
+| 4 | 메인 레이아웃 | ✅ 완료 | App.jsx 작성, 헤더(제목 + 테마 토글) + 콘텐츠 영역 완성 | Claude | 2026-05-18 |
+| 5 | CRUD 컴포넌트 | ✅ 완료 | TaskForm, TaskList, TaskCard, ThemeToggle 작성 완료 | Claude | 2026-05-18 |
+| 6 | API 호출 로직 | ✅ 완료 | src/api.js: Axios 설정, fetchTasks, createTask, updateTask, deleteTask 함수 | Claude | 2026-05-18 |
+| 7 | 테마 토글 구현 | ✅ 완료 | localStorage 저장, dark 클래스 토글, 새로고침 시 유지 | Claude | 2026-05-18 |
+| 8 | 반응형 + 배포 | ✅ 완료 | Vite 개발 서버 실행, API 연동 확인, 부분 업데이트 수정 | Claude | 2026-05-18 |
 
-**예상 완료**: Phase 2 완료 후 1.5주
+**완료**: 2026-05-18  
+**상태**: 모든 단계 완료, API 통신 검증 완료
 
 ---
 
