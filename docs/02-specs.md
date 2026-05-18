@@ -3,11 +3,11 @@
 ## 기술 스택
 
 ### 백엔드
-- **런타임**: Node.js 24 LTS
-- **프레임워크**: Express.js
-- **언어**: TypeScript
+- **런타임**: Python 3.13+
+- **프레임워크**: FastAPI
+- **언어**: Python
 - **데이터베이스**: PostgreSQL
-- **ORM**: Prisma
+- **ORM**: SQLAlchemy 2.0
 
 ### 프론트엔드
 - **라이브러리**: React 18 + TypeScript

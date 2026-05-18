@@ -1,0 +1,33 @@
+{
+  "name": "taskflow-pro",
+  "version": "1.0.0",
+  "description": "팀 업무 관리 풀스택 웹앱",
+  "main": "src/server/index.js",
+  "scripts": {
+    "dev": "node src/server/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhjkl123/kt-taskflow-pro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dhjkl123/kt-taskflow-pro/issues"
+  },
+  "homepage": "https://github.com/dhjkl123/kt-taskflow-pro#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}

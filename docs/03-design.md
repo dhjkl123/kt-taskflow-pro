@@ -14,10 +14,10 @@
 
 | 항목 | 내용 |
 |------|------|
-| **선택** | **Express.js** |
-| **대안** | FastAPI, Django |
-| **근거** | JavaScript 통일 (프론트와 같은 언어), Node.js 에코시스템, 빠른 개발, 미들웨어 구조 명확 |
-| **트레이드오프** | Python 생태계 활용 못함, 타입 안전성 약함 (TypeScript로 보완) |
+| **선택** | **FastAPI** |
+| **대안** | Express.js, Django |
+| **근거** | 빠른 개발 (Pydantic 자동 검증), 자동 Swagger 문서 생성, Python 타입 안전성, 비동기 지원, 가벼움 |
+| **트레이드오프** | JavaScript 통일 못함, 프론트엔드와 언어 분리 |
 
 ---
 
